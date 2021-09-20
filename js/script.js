@@ -1,22 +1,24 @@
-
-    const app = new Vue({
-        el: "#root",
-        data: {
-            images: [
-                {
-                    src: "https://www.globochannel.com/wp-content/uploads/2020/09/clipimage-5f5a2e8c4d42e__700.jpg",
-                },
-                {
-                    "https://www.keblog.it/wp-content/uploads/2018/12/immagini-cani-divertenti-e-strani-16.jpg",
-                },
-                {
-                    "https://www.natifly.com/wp-content/uploads/2017/03/cani-divertenti.jpg"
-                }
-                
-            ],
-            imageIndex: 0,
-            autoplayID: null
-        },
+const app = new Vue({
+	el: "#root",
+	data: {
+		images: [
+			{
+				src: "https://www.natifly.com/wp-content/uploads/2017/03/cani-divertenti.jpg",
+				title: "Canetto1"
+			},
+			{
+				src: "https://t1.ea.ltmcdn.com/it/images/6/5/5/10_curiosita_divertenti_sui_cani_556_600.jpg",
+				title: "Canetto2"
+			},
+			{
+				src: "https://i.pinimg.com/736x/4b/b9/90/4bb990e7fb21fd8dd002aadd4490ce29.jpg",
+				title: "Canetto3"
+			}
+			
+		],
+		imageIndex: 0,
+		autoplayID: null
+	},
         methods: {
             nextImage: function() {
                 this.imageIndex++;
